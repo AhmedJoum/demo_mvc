@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping(path = "/students")
@@ -27,7 +25,7 @@ public class StudentsController {
 	public String viewHomePage(Model model) {
     List<Student> listStudents = (List<Student>) studentRepository.findAll(); 
     model.addAttribute("listStudents", listStudents);
-		return "index";		
+		return "index1";		
 	}
 
   @GetMapping("/addForm")

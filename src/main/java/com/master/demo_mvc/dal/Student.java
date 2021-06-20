@@ -19,11 +19,21 @@ public class Student {
     private String email;
 
     private Integer semester;
+
+    private String address;
     
     public Integer getId() {
         return id;
       }
     
+      public String getAddress() {
+      return address;
+    }
+
+    public void setAddress(String address) {
+      this.address = address;
+    }
+
       public Integer getSemester() {
       return semester;
     }
