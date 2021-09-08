@@ -25,7 +25,7 @@ public class StudentsController {
 	public String viewHomePage(Model model) {
     List<Student> listStudents = (List<Student>) studentRepository.findAll(); 
     model.addAttribute("listStudents", listStudents);
-		return "index1";		
+		return "index";		
 	}
 
   @GetMapping("/addForm")

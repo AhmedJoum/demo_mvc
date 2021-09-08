@@ -14,8 +14,7 @@
 		<hr>
 		<h2>Save Student</h2>
 
-		<form action="#" th:action="@{/students/save}" th:object="${student}"
-			method="POST">
+		<form action="#" th:action="@{/students/save}" th:object="${student}"	method="POST">
 			<input type="text" th:field="*{name}"
 				placeholder="Student Full Name" class="form-control mb-4 col-4">
 				
